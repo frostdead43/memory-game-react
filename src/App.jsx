@@ -28,7 +28,10 @@ function Header() {
   return (
     <header className="header">
       <h1>memory</h1>
+      <div className='buttons'>
       <button>Menu</button>
+      <button className='hidden'>Restart</button>
+      </div>
     </header>
   );
 }

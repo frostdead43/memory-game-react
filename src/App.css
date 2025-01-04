@@ -17,6 +17,15 @@
   border-radius: 26px;
 }
 
+.buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.hidden {
+  display: none;
+}
+
 
 .game-area {
   display: grid;
@@ -25,7 +34,7 @@
 }
 
 .circles {
-  background: #304859;
+  background: rgb(48, 72, 89);
   border-radius: 50%;
   font-size: 40px;
   font-weight: 700;
@@ -35,6 +44,7 @@
   width: 72.53px;
   height: 72.53px;
   padding-top: 12px;  
+  cursor: crosshair;
 }
 
 .selected {
@@ -46,3 +56,55 @@
   background-color: rgba(188, 206, 217, 1);
   color: rgba(252, 252, 252, 1);
 }
+
+
+@media (width >= 768px) {
+
+  h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 49.6px;
+  text-align: left;
+  }
+
+  .buttons {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.8px;
+  text-align: center;
+  }
+
+  .hidden{
+    display: inline-block;
+  }
+
+  .container {
+    padding-inline: 118px;
+    margin-bottom: 118px;
+  }
+
+  .circles {
+    width: 118px;
+    height: 118px;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 69.44px;
+    text-align: center;
+    padding-top: 26px;
+  } 
+}
+
+@media(width >= 1440px) {
+  .container {
+    padding-inline: 454px;
+  }
+}
+
+
+@media (width >= 1920px) {
+  .container {
+    padding-inline: 700px;
+  }
+}
+
+
